@@ -7,8 +7,7 @@ WORKDIR $CATALINA_HOME
 
 
 
-ENV TOMCAT_VERSION 8.0.29
-ENV TOMCAT_TGZ_URL https://www.apache.org/dist/tomcat/tomcat-8/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz
+ENV TOMCAT_TGZ_URL mirrors.aliyun.com/apache/tomcat/tomcat-8/v8.0.37/bin/apache-tomcat-8.0.37.tar.gz
 
 RUN set -x \
         && curl -fSL "$TOMCAT_TGZ_URL" -o tomcat.tar.gz \
